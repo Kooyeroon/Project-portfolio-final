@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+ 
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center white" style="color:black">
+    <div>
+        <h1 class="text-center">About</h1>
+        <div id = "about-div">
+            <p class="text-center" >
+                This web application serves as a platform for analyzing load effects, including shear force and bending moment, within a beam. Furthermore, it generates shear force and bending moment diagrams, crucial for understanding load magnitudes along the beam's length. This functionality facilitates straightforward analysis for students, professionals, and researchers alike.
+            </p>
+            </div>
+            
+              <h1 id = "head-h">
+                  Beam Calculator
+              </h1>
+              <p class="lead font-weight-normal">Let start anayzing load effect in beam</p>
+              <a class="btn btn-primary" href="{{ url_for('register')}}"> Start</a>
+          </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
+<br>
+<div class="container">
+  <section id="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> Email: goshukeneatujuba@gmail.com</p>
+      <p><i class="fas fa-phone"></i> Phone: +251917365918</p>
+      <p>Social Media Links:</p>
+      <ul>
+        <li><a href="https://www.facebook.com/goshu.kenea.5"><i class="fab fa-facebook"></i> Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/goshu-kenea-861474232/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/Kooyeroon"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://scholar.google.com/citations?user=_BD5AzIAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+      </ul>
+  </section>
+</div>
+<footer id = "footer-st" class="text-center"> Copyright @2024 Goshu Kenea</footer>
+    
+    <style type="text/css">
+        #about-div
+        {
+            margin-bottom: 10px;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        #head-h
+        {
+            margin-bottom: 10px;
+            color: #07097a;
+        }
+        #footer-st
+        {
+            margin-bottom: 20px;
+        }
+    </style>
+
+{% endblock content %}
